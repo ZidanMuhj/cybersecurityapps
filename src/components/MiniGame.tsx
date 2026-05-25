@@ -129,7 +129,7 @@ export default function MiniGame({ stats, onUpdateStats }: MiniGameProps) {
           <div className="flex items-center gap-2">
             <span className="bg-red-500/10 text-red-500 text-[9px] font-mono font-black border border-red-500/20 px-2.5 py-1 rounded-none uppercase tracking-wider flex items-center gap-1.5 animate-pulse">
               <span className="w-1.5 h-1.5 rounded-none bg-red-500"></span>
-              PUSAT KENDALI KERENTANAN SIBEREDU
+              PUSAT KENDALI KERENTANAN UNAS CYBER
             </span>
           </div>
           <h3 className="font-display font-black text-lg md:text-xl text-white uppercase italic tracking-tight">
