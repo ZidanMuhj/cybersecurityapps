@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,800&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-cyber-bg: #08090A;
+  --color-cyber-card: #0A0C12;
+  --color-cyber-card-dark: #050608;
+  --color-cyber-green: #00FF41;
+  --color-cyber-border: #1F2937;
+  --color-cyber-border-bright: #374151;
+  --color-cyber-text-gray: #9CA3AF;
+  --color-cyber-text-dark: #4B5563;
+}
+
+body {
+  background-color: #08090A;
+  color: #F3F4F6;
+  margin: 0;
+  font-family: var(--font-sans);
+}
+
+/* Custom cyber grid */
+.cyber-grid {
+  background-size: 60px 60px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 255, 65, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 255, 65, 0.03) 1px, transparent 1px);
+}
+
+/* Scrollbar customizations */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #08090A;
+}
+::-webkit-scrollbar-thumb {
+  background: #1F2937;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00FF41;
+}
+
+/* Print simulation for certificate */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #print-certificate, #print-certificate * {
+    visibility: visible;
+  }
+  #print-certificate {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #08090A !important;
+    color: #F3F4F6 !important;
+  }
+}
