@@ -199,7 +199,7 @@ export default function App() {
                   : "text-[#9CA3AF] hover:text-white"
               }`}
             >
-              Mini Game
+              ICT Games
             </button>
             <button
               id="nav-sertifikat"
